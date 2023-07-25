@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment 3 B8A3-fruit-brust</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <!-- daisy ui and tailwind  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+    <!-- costomaize  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+
+    <!-- font awesome icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .font-lato{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+
+</head>
+<body class="font-lato">
+    <header>
+        <!-- nav section  -->
+        <section class=" max-w-screen-xl mx-auto px-4 md:px-8 lg:px-12 py-5 my-5">
+            <nav class=" bg-white md:bg-[#F85559] flex justify-between items-center md:justify-between md:py-4 lg:py-3 md:px-6 lg:px-12 md:rounded-[600px] ">
+                <!-- text  -->
+                <div class=" hidden md:flex md:gap-2 lg:gap-4">
+                    <a class="text-white font-semibold" href="">Home</a>
+                    <a class="text-white font-semibold" href="">About Us</a>
+                    <a class="text-white font-semibold" href="">Shop</a>
+                    <a class="text-white font-semibold" href="">All Fruits</a>
+                </div>
+
+                <!-- logo  -->
+                <div class=" text-black flex gap-2  items-center md:text-2xl lg:text-4xl text-2xl md:text-white font-bold ">
+                    <img class="w-[20%] lg:w-[22%] " src="./images/logo.png" alt="">
+                    <span class="font-bold">Fruit Burst</span>
+                </div>
+
+                <!-- placeholder  -->
+                <div class=" hidden md:flex ">
+                    <input class="relative p-3 rounded-[600px] md:w-[80%] lg:w-full " type="text" placeholder="Search here">
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass absolute text-2xl -ml-10 m-2"></i>
+                    </div>
+
+                </div>
+                                <!-- dropdown  -->
+                      <div class="dropdown  flex  md:hidden">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </label>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-0  shadow bg-gray-50 rounded-md w-max">
+                            <a class="font-bold mb-4 text-xs text-black" href="">Home</a>
+                            <a class="font-bold mb-4 text-xs text-black" href="">About Us</a>
+                            <a class="font-bold mb-4 ctext-xs text-black" href="">Shop</a>
+                            <a class="font-bold text-xs text-black" href="">All Fruits</a>
+                      </div>
+                                    
+            </nav>
+        </section>
+    </header>
+</body>
+</html>
