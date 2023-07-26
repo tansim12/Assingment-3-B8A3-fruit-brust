@@ -231,9 +231,9 @@
             </div>
 
             <!-- 2nd div  -->
-            <div>
-                <!-- grid div  -->
-                <div class="border-2 border-black text-center">
+            <div class=" relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <!-- grid div-1  -->
+                <div class="border-2 border-black text-center p-3 ">
                     <div class="flex justify-center">
                         <img src="./images/fruit6.png" alt="">
                     </div>
@@ -252,28 +252,57 @@
                         <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
                         <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
                     </div>
+                    <br>
 
                     <!-- popup  -->
+                    <!-- daisy khala  -->
+
+<!-- Open the modal using ID.showModal() method -->
+<p onclick="my_modal_5.showModal()" class="text-primary hover:font-bold hover:text-xl cursor-pointer">Details</p>
+<dialog  id="my_modal_5" class="modal modal-bottom absolute top-[800px] w-[70%] mx-auto sm:modal-middle">
+  <form method="dialog" class="modal-box">
+    <div class="text-center">
+      <div class="flex justify-center"><img src="./images/fruit6.png" alt=""></div>
+    <h3 class="font-bold text-lg">Apples</h3>
+    <p class="py-2 w-full sm:w-[70%] mx-auto">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+    <!-- rating  -->
+    <div class="rating rating-sm">
+      <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
+      <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
+      <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" checked  />
+      <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
+      <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
+    </div>
 
 
+    </div>
+    <div class="flex mt-4 justify-center gap-5 ">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="px-3 py-0 outline bg-transparent text-primary border  rounded-lg border-primary">Close</button>
+      <button class="btn btn-error text-white font-bold">Buy Now</button>
+      
+    </div>
+  </form>
+</dialog> 
 
-
-                    
-
-
-
+<!-- popup end  -->
 
 
                 </div>
                 
+
+
+                <!-- 2nd div end  -->
             </div>
         </section>
         <!-- uncomplete -->
 
 
+
+        
         <!-- hero  -->
         <!-- Meet the team section -->
-        <section class=" max-w-screen-xl mx-auto px-4 md:px-8 lg:px-12 py-5 my-5" >
+        <section class="  max-w-screen-xl mx-auto px-4 md:px-8 lg:px-12 py-5 my-5" >
             <div class="hero min-h-[70vh] bg-team-1">
                 <div class="hero-overlay bg-opacity-70"></div>
                 <div class="hero-content text-center text-neutral-content">
